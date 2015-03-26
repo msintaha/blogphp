@@ -1,0 +1,85 @@
+
+body{
+
+	margin-top: 0;
+	margin-bottom: 0;
+}
+#add_cat > div > form > label:nth-child(3) > textarea{
+	max-width: 380px !important;
+	min-width: 380px;
+}
+
+
+body > main > form > div:nth-child(2) > textarea {
+	width: 793px;
+}
+.nav li {
+	margin: 25px;
+	font-size: 11px;
+	font-family: latobold;
+	text-transform: uppercase;
+	color: rgb(107, 92, 92) !important;
+}
+#star{
+	width:19px;
+}
+#star:hover{
+	opacity: 0.5;
+}
+.nav li:hover{
+	border-bottom: 2px solid #d94626;
+padding-bottom: 6%;
+-webkit-transition: all 0.2s linear;
+color: #d94626;
+}
+a{
+	text-decoration: none;
+	color: #d94626;
+	
+}
+
+.edit_delete {
+	list-style-type: none;
+	display: inline-flex;
+	color: #d94626;
+
+}
+.edit_delete li {
+
+}
+#timestamp {
+	font-size: 14px;
+
+	
+}
+body > main > div {
+
+}
+#cat{
+	color:#d94626;
+}
+	#main{
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.card{
+		margin-right: 20px !important;
+	}
+input[type="submit" ]{
+color: #ff695e;
+font-family: lato;
+padding: 10px;
+background: transparent;
+border: 2px solid #ff695e;
+font-weight: bold;
+border-radius: 3px;
+}
+input[type="submit" ]:hover{
+	background:#ff695e;
+	color: white;
+	-webkit-transition: all 0.2s linear;
+}
+body > main > form > div:nth-child(1) > label {
+
+}
