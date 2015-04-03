@@ -21,10 +21,10 @@ $fields=isset($_SESSION['fields']) ? $_SESSION['fields']: [];
 
 <body>
 <div class="ui red inverted menu">
-  <a href="index.php" class="active item">
+  <a href="index.php" class="item">
    <i class="fa fa-spoon"></i> Food Blog
   </a>
-   <a href="contact_us.php" class="item">
+   <a href="contact_us.php" class="active item">
     <i class="fa fa-envelope"></i> Contact Me
   </a>
 </div>

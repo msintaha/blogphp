@@ -25,16 +25,13 @@ if(isset($_POST['title'], $_POST['contents'], $_POST['category'],$_POST['image']
    if(empty($errors)){
       add_post($title,$contents,$_POST['category'],$_POST['image']);
       $id=mysql_insert_id();
-      header('Location: index.php');
+      header('Location: home.php');
       die();
    }
    
 }
 
 ?>
-
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -51,10 +48,10 @@ if(isset($_POST['title'], $_POST['contents'], $_POST['category'],$_POST['image']
 </head>
 <body>
 <div class="ui red inverted menu">
-  <a href="home.php" class="active item">
+  <a href="home.php" class="item">
    <i class="fa fa-spoon"></i> Food Blog
   </a>
-  <a href="add_post.php" class="item">
+  <a href="add_post.php" class="active item">
    <i class="fa fa-plus"></i> Post
   </a>
   <a href="add_category.php" class="item">

@@ -19,7 +19,7 @@ if (!isset($_SESSION['email']))
 
 <body>
 <div class="ui red inverted menu">
-  <a href="home.php" class="active item">
+  <a href="home.php" class="item">
    <i class="fa fa-spoon"></i> Food Blog
   </a>
   <a href="add_post.php" class="item">
@@ -28,7 +28,7 @@ if (!isset($_SESSION['email']))
   <a href="add_category.php" class="item">
     <i class="fa fa-bookmark-o"></i> Food Category
   </a>
-   <a href="category_list.php" class="item">
+   <a href="category_list.php" class="active item">
     <i class="fa fa-list"></i> Food Categories
   </a>
    <a href="logout.php" class="item">

@@ -16902,7 +16902,7 @@ ol.ui.horizontal.list li:before,
 .ui.secondary.pointing.menu > .menu > .item.active,
 .ui.secondary.pointing.menu > .item.active {
   background-color: transparent;
-  border-color: rgba(0, 0, 0, 0.4);
+  border-color: rgba(237, 38, 38, 0.4);
   box-shadow: none;
   color: rgba(0, 0, 0, 0.8);
 }
@@ -17407,7 +17407,7 @@ ol.ui.horizontal.list li:before,
 /* Red */
 
 .ui.inverted.red.menu {
-  background-color: #d95c5c;
+  background-color: #F4086A;
 }
 
 .ui.inverted.red.pointing.menu .active.item:after {

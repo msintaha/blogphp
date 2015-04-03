@@ -32,13 +32,13 @@ if(!isset($error)){
 </head>
 <body>
 <div class="ui red inverted menu">
-  <a href="home.php" class="active item">
+  <a href="home.php" class="item">
    <i class="fa fa-spoon"></i> Food Blog
   </a>
   <a href="add_post.php" class="item">
    <i class="fa fa-plus"></i> Post
   </a>
-  <a href="add_category.php" class="item">
+  <a href="add_category.php" class="active item">
     <i class="fa fa-bookmark-o"></i> Food Category
   </a>
    <a href="category_list.php" class="item">

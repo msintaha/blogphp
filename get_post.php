@@ -1,5 +1,6 @@
 <?php
 include('resources/init.php');
+ session_start();
 $pid=$_GET['id'];
 $posts = get_posts($pid); 
 ?>
@@ -73,8 +74,15 @@ Rate this recipe NOW!
  <?php foreach ($comm as $comment) {
     ?>
   <div class="comment">
+ <?php
+
+if (isset($_SESSION['email'])) {?>
+    <a href="delete_comment.php?id=<?php echo $comment['comm_id']; ?>"><div class="right floated compact ui red button">Delete</div></a>
+<?php }else{ ?>
+    <a href="#"></a>
+ <?php }?>
     <a class="avatar">
-      <img src="http://www10.ujaen.es/sites/default/files/imagefield_default_images/default_user_icon.png">
+      <img src="img/avatar.png">
     </a>
     <div class="content">
       <a class="author"><?php echo $comment['user'];?></a>
@@ -98,7 +106,7 @@ Rate this recipe NOW!
    $user = $_POST['please'];
    $comment=$_POST['work'];
      add_comment($pid,$user,$comment);
-     die();
+     header("refresh: 1;");
   }
 }
 ?>
@@ -118,9 +126,7 @@ Rate this recipe NOW!
   </form>
   <?php
 }
-  ?>
-
-  
+  ?>  
   </main><br><br>
   </body>
 </html>
