@@ -44,6 +44,8 @@ $query="DELETE FROM `{$table}` WHERE `id`='{$id}'";
 mysql_query($query);
 $del="DELETE FROM `comments` WHERE `post_id`='{$id}'";
 mysql_query($del);
+$rate="DELETE FROM `ratings` WHERE `article`='{$id}'";
+mysql_query($rate);
 }
 function delete_comm($id){
 $id=(int) $id;
