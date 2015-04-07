@@ -22,6 +22,9 @@ $contentLiked = false;
    <a href="contact_us.php" class="item">
     <i class="fa fa-envelope"></i> Contact Me
   </a>
+   <a href="access.php" class="item">
+     Login
+  </a>
 </div>
 
 <div id="main">
@@ -94,6 +97,7 @@ foreach($posts as $post){
   background-color: white !important;
   border-color: #00b5ad !important;
   color: #00b5ad !important;
-}
-	</style>
+} body{
+  background-image:url("img/back.jpg") !important;
+	}</style>
 </html>

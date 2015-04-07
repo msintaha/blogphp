@@ -64,7 +64,8 @@ if(isset($_POST['title'], $_POST['contents'], $_POST['category'],$_POST['image']
      Logout
   </a>
 </div>
-   <main style="width:80% !important;margin-left:auto;margin-right:auto;padding:10px;background:white;">
+   <main style="width:80% !important;
+   background: rgba(255,255,255,0.3);margin-left:auto;margin-right:auto;padding:10px;">
 	<h2>Add a Post</h2>
 
 <?php
@@ -74,7 +75,7 @@ if(isset($_POST['title'], $_POST['contents'], $_POST['category'],$_POST['image']
    }
 ?>
 
-<form class="ui form segment" action="" method="POST">
+<form class="ui form segment" style="background: rgba(255,255,255,0.3);" action="" method="POST">
       <div class="field">
         <label for="title"> Title </label>
    <input type="text" name="title" value="<?php if(isset($_POST['title'])) echo $_POST['title']; ?>">
@@ -105,4 +106,8 @@ if(isset($_POST['title'], $_POST['contents'], $_POST['category'],$_POST['image']
 
 </main>
 </body>
+ <style type="text/css">
+   body{
+  background-image:url("img/back.jpg") !important;
+  }</style>
 </html>

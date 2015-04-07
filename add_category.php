@@ -67,6 +67,9 @@ if(isset($error)){
     <input type="submit" value="Add Category">
   </form>
    </main>
-   
+   <style type="text/css">
+   body{
+  background-image:url("img/back.jpg") !important;
+  }</style>
 </body>
 </html>

@@ -59,5 +59,10 @@ foreach(get_categories() as $category){
   </div>	
 
 </main>
+<style type="text/css">
+  body{
+  background-image:url("img/back.jpg") !important;
+  }
+</style>
 </body>
 </html>

@@ -61,7 +61,10 @@ $fields=isset($_SESSION['fields']) ? $_SESSION['fields']: [];
   </form>
 	</div>
 </main>
-
+ <style type="text/css">
+   body{
+  background-image:url("img/back.jpg") !important;
+  }</style>
 </body>
 </html>
 

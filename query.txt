@@ -1,0 +1,95 @@
+Add_post
+-------------
+INSERT INTO `posts` SET `cat_id`=category,
+    `title`='title',
+    `contents` = 'contents',
+    `date_posted`=NOW(),
+     `img`='img';
+
+Edit_post
+---------------
+UPDATE `posts` SET
+		`cat_id`	= category,
+		`title`		= 'title',
+		`contents`	= 'contents',
+		`img`		= 'img',
+		`date_posted`=NOW()
+		WHERE `id` = id;
+
+Get_posts
+--------------
+SELECT posts.id AS post_id, categories.id AS category_id, title, contents,img,
+	 date_posted, categories.name AS cat_name FROM posts INNER JOIN categories ON categories.id = posts.cat_id
+	 ORDER BY `posts` . `id` DESC;
+
+Get_post
+---------------
+SELECT posts.id AS post_id, categories.id AS category_id, title, contents,img,
+	 date_posted, categories.name AS cat_name FROM posts INNER JOIN categories ON categories.id = posts.cat_id
+	 WHERE `posts` . `id` = id
+	 ORDER BY `posts` . `id` DESC;
+
+Get_post_by_category
+---------------------
+SELECT posts.id AS post_id, categories.id AS category_id, title, contents,img,
+	 date_posted, categories.name AS cat_name FROM posts INNER JOIN categories ON categories.id = posts.cat_id
+	 WHERE `cat_id` = cat_id
+	 ORDER BY `posts` . `id` DESC;
+
+
+Add_category
+----------------
+INSERT INTO `categories` SET `name` = 'name';
+
+
+Get_categories
+--------------
+SELECT `id`,`name` FROM `categories`;
+
+Delete_post
+---------------
+DELETE FROM `posts` WHERE `id`=id;
+DELETE FROM `comments` WHERE `post_id`=id;
+
+Add_comment
+--------------
+INSERT INTO `comments` SET `post_id`=pid,
+    `comment_user`='user',
+    `comment_body` = 'body',
+    `comment_date`=NOW();
+
+Get_comments
+--------------
+SELECT
+  `comment_body` AS `body`,
+  `comment_user` AS `user`,
+  `comment_date` AS `date`,
+  `comment_id` AS `comm_id`
+  	FROM `comments` WHERE `post_id`=pid;
+
+Delete_comment
+---------------
+DELETE FROM `comments` WHERE `comment_id`=id;
+
+Comment_count
+---------------
+SELECT
+  count(`comment_id`) AS `comm_no`
+  	FROM `comments` WHERE `post_id`=pid;
+
+Get_rating
+-------------
+SELECT avg(`rating`) AS `avrg` FROM `ratings`
+	WHERE `post_id`=pid;
+
+Add_rating
+-------------
+INSERT INTO `ratings`(post_id,rating) VALUES (post,rating);
+
+Add_user
+-------------
+INSERT INTO `login` (email,password) VALUES (email_id,pass);
+
+Delete_cat
+--------------------
+DELETE FROM `categories` WHERE `id`='id'

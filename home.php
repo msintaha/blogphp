@@ -30,7 +30,7 @@ if (!isset($_SESSION['email']))
     <i class="fa fa-bookmark-o"></i> &nbsp;Food Category
   </a>
    <a href="category_list.php" class="item">
-    <i class="fa fa-list"></i>&nbsp; Food Categories
+    <i class="fa fa-list"></i>&nbsp; Category List
   </a>
    <a href="logout.php" class="item">
      Logout
@@ -107,6 +107,9 @@ foreach($posts as $post){
 		<style type="text/css">
 	.ui.button{
 		background-color: #54c8ff !important;
+	}
+	body{
+  background-image:url("img/back.jpg") !important;
 	}
 	.ui.teal.labels .label, .ui.teal.label {
   background-color: white !important;

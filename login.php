@@ -13,7 +13,7 @@ session_start();
 $email= $_POST['email'];
 $password=$_POST['password'];
 if($email && $password){
-	$query=mysql_query("SELECT * FROM login WHERE email='$email'");
+	$query=mysql_query("SELECT * FROM author WHERE email='$email'");
 	$numrows=mysql_num_rows($query);
 	if($numrows!=0){
 		while($row=mysql_fetch_assoc($query)){

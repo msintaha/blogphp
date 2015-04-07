@@ -36,7 +36,13 @@ $name=mysql_real_escape_string($name);
 mysql_query("INSERT INTO `categories` SET `name` = '{$name}'");
 
 }
+function delete_cat($table, $id){
+$table=mysql_real_escape_string($table);
+$id=(int) $id;
+$query="DELETE FROM `{$table}` WHERE `id`='{$id}'";
+mysql_query($query);
 
+}
 function delete($table, $id){
 $table=mysql_real_escape_string($table);
 $id=(int) $id;

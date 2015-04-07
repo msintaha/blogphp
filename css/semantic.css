@@ -72,6 +72,9 @@ html {
 body {
   margin: 0;
 }
+body{
+  background-image:url("img/back.jpg") !important; 
+}
 
 /* HTML5 display definitions
    ========================================================================== */
@@ -519,7 +522,9 @@ body {
   margin: 0px;
   padding: 0px;
   min-width: 278px;
-  background: #f7f7f7;
+  
+  background-image:url("img/back.jpg"); 
+
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 1.33;
@@ -11732,7 +11737,7 @@ ol.ui.horizontal.list li:before,
 
 .ui.segment {
   position: relative;
-  background-color: #ffffff;
+  background: rgba(255,255,255,0.3) !important;
   box-shadow: 0px 0px 0px 1px rgba(39, 41, 43, 0.15), 0px 1px 2px 0 rgba(0, 0, 0, 0.05);
   margin: 1rem 0em;
   padding: 1em 1em;

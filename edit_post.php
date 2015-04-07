@@ -66,7 +66,7 @@ if(isset($_POST['title'], $_POST['contents'], $_POST['category'])){
     <i class="fa fa-envelope"></i> Contact Me
   </a>
 </div>
-<main style="width:80% !important;margin-left:auto;margin-right:auto;padding:10px;background:white;">
+<main style="width:80% !important;margin-left:auto;margin-right:auto;padding:10px;background:rgba(255,255,255,0.3);">
 	<h2>Edit a Post</h2>
 
 <?php
@@ -107,6 +107,9 @@ if(isset($_POST['title'], $_POST['contents'], $_POST['category'])){
     <input type="submit" value="Add Post">
   </form>
  <main >
-
+ <style type="text/css">
+   body{
+  background-image:url("img/back.jpg") !important;
+  }</style>
 </body>
 </html>
